@@ -1,4 +1,5 @@
-## makeCacheMatix function create the matrix which is 
+## makeCacheMatrix: This function creates a special "matrix" object 
+## that can cache its inverse.
 ## 
 
 ##1 setMat set the elements for matrix
