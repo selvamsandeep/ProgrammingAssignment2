@@ -1,6 +1,5 @@
-
 ## makeCacheMatix function create the matrix which is 
-## really a list containing a function to
+## 
 
 ##1 setMat set the elements for matrix
 ##2.getMat get the elements for matrix
