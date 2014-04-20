@@ -24,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve  function calculate the inverse of matrix
+## cacheSolve  function calculate the inverse of matrix 
+## if it is square Matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -39,9 +40,12 @@ cacheSolve <- function(x, ...) {
     ## get the matrix 
     mat<- x$getMat()
     
-    ## compute Inverse matrix
-    i<- solve(mat)
-    
+    ## compute Inverse matrix if it square matrix
+    if(ncol(mat)== nrow(mat)){
+      i<- solve(mat)
+    }else{
+        message("Input invertable square Matrix")
+    }
     ## set the invese matrix
     
     x$setInv(i)
